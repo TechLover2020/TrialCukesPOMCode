@@ -87,21 +87,20 @@ formatter.match({
   "location": "LoginSteps.the_symbiote_home_page_something_on_something(String,String)"
 });
 formatter.result({
-  "duration": 13365627299,
-  "status": "passed"
+  "duration": 185020473,
+  "error_message": "java.lang.NullPointerException\r\n\tat com.learning.test.LoginPage.navigateTo(LoginPage.java:36)\r\n\tat com.learning.test.LoginSteps.the_symbiote_home_page_something_on_something(LoginSteps.java:23)\r\n\tat ✽.Given the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"phantomjs\"(com/learning/test/stores.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginSteps.logging_in_as_an_admin_with_details(DataTable)"
 });
 formatter.result({
-  "duration": 3204224803,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginSteps.the_home_page_navigation_is_available()"
 });
 formatter.result({
-  "duration": 1344827506,
-  "status": "passed"
+  "status": "skipped"
 });
 });

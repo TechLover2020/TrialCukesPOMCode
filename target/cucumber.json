@@ -34,8 +34,9 @@
         "steps": [
           {
             "result": {
-              "duration": 13365627299,
-              "status": "passed"
+              "duration": 185020473,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.learning.test.LoginPage.navigateTo(LoginPage.java:36)\r\n\tat com.learning.test.LoginSteps.the_symbiote_home_page_something_on_something(LoginSteps.java:23)\r\n\tat ✽.Given the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"phantomjs\"(com/learning/test/stores.feature:10)\r\n",
+              "status": "failed"
             },
             "line": 10,
             "name": "the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"phantomjs\"",
@@ -56,8 +57,7 @@
           },
           {
             "result": {
-              "duration": 3204224803,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "logging in as an admin with details",
@@ -84,8 +84,7 @@
           },
           {
             "result": {
-              "duration": 1344827506,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "the home page navigation is available",

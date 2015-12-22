@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#Scenario: Successfully logging in"
+          },
+          {
+            "line": 4,
+            "value": "#  Given the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"chrome\""
+          },
+          {
+            "line": 5,
+            "value": "#  When logging in as an admin"
+          },
+          {
+            "line": 6,
+            "value": "#  Then the home page navigation is available"
+          },
+          {
+            "line": 7,
+            "value": "#"
+          }
+        ],
+        "line": 9,
+        "name": "Successfully logging in",
+        "description": "",
+        "id": "authentication;successfully-logging-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13365627299,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"phantomjs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://symbiote-app.herokuapp.com",
+                  "offset": 24
+                },
+                {
+                  "val": "phantomjs",
+                  "offset": 64
+                }
+              ],
+              "location": "LoginSteps.the_symbiote_home_page_something_on_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3204224803,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "logging in as an admin with details",
+            "match": {
+              "location": "LoginSteps.logging_in_as_an_admin_with_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "admin",
+                  "admin"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1344827506,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the home page navigation is available",
+            "match": {
+              "location": "LoginSteps.the_home_page_navigation_is_available()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Authentication",
+    "description": "",
+    "id": "authentication",
+    "keyword": "Feature",
+    "uri": "com/learning/test/stores.feature"
+  }
+]

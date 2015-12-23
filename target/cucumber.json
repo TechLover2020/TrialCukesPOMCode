@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 185020473,
+              "duration": 105833281,
               "error_message": "java.lang.NullPointerException\r\n\tat com.learning.test.LoginPage.navigateTo(LoginPage.java:36)\r\n\tat com.learning.test.LoginSteps.the_symbiote_home_page_something_on_something(LoginSteps.java:23)\r\n\tat ✽.Given the Symbiote home page \"https://symbiote-app.herokuapp.com\" on \"phantomjs\"(com/learning/test/stores.feature:10)\r\n",
               "status": "failed"
             },

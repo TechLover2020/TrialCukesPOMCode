@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.learning.test.RunnerClassTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.682 sec - in com.learning.test.RunnerClassTest
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 2.623 sec <<< FAILURE! - in com.learning.test.RunnerClassTest
+When logging in as an admin with details(Scenario: Successfully logging in)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalMonitorStateException: null
+	at java.lang.Object.wait(Native Method)
+	at com.learning.test.LoginPage.loginAsAdmin(LoginPage.java:57)
+	at com.learning.test.LoginSteps.logging_in_as_an_admin_with_details(LoginSteps.java:40)
+	at ?.When logging in as an admin with details(com/learning/test/stores.feature:11)
+
+Scenario: Successfully logging in  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalMonitorStateException: null
+	at java.lang.Object.wait(Native Method)
+	at com.learning.test.LoginPage.loginAsAdmin(LoginPage.java:57)
+	at com.learning.test.LoginSteps.logging_in_as_an_admin_with_details(LoginSteps.java:40)
+	at ?.When logging in as an admin with details(com/learning/test/stores.feature:11)
+

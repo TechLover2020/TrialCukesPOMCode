@@ -17,30 +17,28 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 public class BasePage {
 
 	protected WebDriver driver;
-	WebDriver chrome = null;
+	//WebDriver chrome = null;
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public BasePage openBrowser(String browserType) {
+		 String binary = System.getProperty("phantomjs.binary");
 		try {
 			if (browserType.equalsIgnoreCase("firefox")) {
 				driver = new FirefoxDriver();
-			} else if (browserType.equalsIgnoreCase("Chrome") && chrome == null) {
+			} else if (browserType.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						"C:\\Users\\fennymon\\Desktop\\CurrentBDD\\CukePOM\\drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
-				chrome = driver;
-			} else if (browserType.equals("Chrome") && chrome == null) {
-				driver = chrome;
 			} else if (browserType.equalsIgnoreCase("htmlunit")) {
-				driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_38);
-				((HtmlUnitDriver) driver).setJavascriptEnabled(true);
+				driver = new HtmlUnitDriver();
 			} else if (browserType.equalsIgnoreCase("phantomjs")) {
 				DesiredCapabilities caps = new DesiredCapabilities();
-				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-						(System.getProperty("phantomjs.binary")));
+/*				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
+						"C:\\Users\\fennymon\\Desktop\\CurrentBDD\\CukePOM\\drivers\\phantomjs.exe");*/
+				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
 				driver = new PhantomJSDriver(caps);
 			}
 			/* else if (browserType.equalsIgnoreCase("Edge")) {

@@ -87,21 +87,21 @@ formatter.match({
   "location": "LoginSteps.the_symbiote_home_page_something_on_something(String,String)"
 });
 formatter.result({
-  "duration": 2012746900,
+  "duration": 14351791862,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.logging_in_as_an_admin_with_details(DataTable)"
 });
 formatter.result({
-  "duration": 3182526,
-  "error_message": "java.lang.IllegalMonitorStateException\r\n\tat java.lang.Object.wait(Native Method)\r\n\tat com.learning.test.LoginPage.loginAsAdmin(LoginPage.java:57)\r\n\tat com.learning.test.LoginSteps.logging_in_as_an_admin_with_details(LoginSteps.java:40)\r\n\tat ✽.When logging in as an admin with details(com/learning/test/stores.feature:11)\r\n",
-  "status": "failed"
+  "duration": 7842881535,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.the_home_page_navigation_is_available()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1320862763,
+  "status": "passed"
 });
 });

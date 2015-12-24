@@ -36,9 +36,9 @@ public class BasePage {
 				driver = new HtmlUnitDriver();
 			} else if (browserType.equalsIgnoreCase("phantomjs")) {
 				DesiredCapabilities caps = new DesiredCapabilities();
-/*				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-						"C:\\Users\\fennymon\\Desktop\\CurrentBDD\\CukePOM\\drivers\\phantomjs.exe");*/
-				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
+				caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
+						"C:\\Users\\fennymon\\Desktop\\CurrentBDD\\CukePOM\\drivers\\phantomjs.exe");
+				//caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, binary);
 				driver = new PhantomJSDriver(caps);
 			}
 			/* else if (browserType.equalsIgnoreCase("Edge")) {

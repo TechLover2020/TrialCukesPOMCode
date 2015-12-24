@@ -7,7 +7,7 @@ Feature: Authentication
  #
 @login
   Scenario: Successfully logging in
-    Given the Symbiote home page "https://symbiote-app.herokuapp.com" on "firefox"
+    Given the Symbiote home page "https://symbiote-app.herokuapp.com" on "phantomjs"
     When logging in as an admin with details
       | username | password |
       | admin    | admin    |

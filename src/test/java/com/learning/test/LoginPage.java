@@ -51,9 +51,10 @@ public class LoginPage extends BasePage {
 
 	public NavigationPage loginAsAdmin(List<Map<String, String>> data, LoginPage login)
 			throws IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException,
-			NoSuchMethodException, SecurityException {
+			NoSuchMethodException, SecurityException, InterruptedException {
 		Calendar calendar = Calendar.getInstance();
 		String date = calendar.getTime().toString().trim().replaceAll(" ", "_").replace(":", "");
+		wait(4000);
 		driver.findElement(open_button).click();
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("C:\\Users\\fennymon\\Desktop\\CurrentBDD\\CukePOM\\screenshots\\Screenshot_" + date + ".png"));
